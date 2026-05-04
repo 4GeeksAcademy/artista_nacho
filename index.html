@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Carreras Diseñador</title>
+    <meta name="description" content="Portfolio de Jean Carreras, diseñador gráfico con estilo de animación japonesa. Servicios internacionales de branding, ilustración y diseño juvenil desde Buenos Aires." />
+    <meta name="keywords" content="diseño gráfico anime, animación japonesa, portfolio juvenil, branding internacional, arte digital, Buenos Aires, diseño latinoamericano" />
+    <meta name="geo.region" content="AR-B" />
+    <meta name="geo.placename" content="Buenos Aires, Argentina" />
+    <meta name="geo.position" content="-34.6037; -58.3816" />
+    <meta name="ICBM" content="-34.6037, -58.3816" />
+    <meta property="og:title" content="Jean Carreras Diseñador - Portfolio de animé y branding juvenil" />
+    <meta property="og:description" content="Artista gráfico con enfoque en animación japonesa y servicios internacionales, creando diseños coloridos para un público joven." />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap');
+
+        :root {
+            --space-0: 0;
+            --space-1: 8px;
+            --space-2: 16px;
+            --space-3: 24px;
+            --space-4: 32px;
+            --space-5: 40px;
+            --space-6: 48px;
+            --space-7: 56px;
+            --space-8: 64px;
+            --space-9: 72px;
+            --space-10: 80px;
+            --card-padding: var(--space-4);
+            --card-gap: var(--space-3);
+            --section-gap: var(--space-6);
+            --section-padding: var(--space-6);
+            --card-radius: 28px;
+            --celeste: #8ed1e0;
+            --azul: #60a5fa;
+            --violeta: #8b5cf6;
+            --negro: #0f172a;
+            --blanco: #ffffff;
+            --gris-claro: #475569;
+            --gris-oscuro: #1e293b;
+            --fondo: #f7fbff;
+            --card-bg: rgba(255, 255, 255, 0.94);
+            --border: rgba(148, 163, 184, 0.24);
+            font-family: 'M PLUS 1p', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                linear-gradient(130deg, rgba(247, 251, 255, 0.78) 0%, rgba(238, 247, 255, 0.72) 52%, rgba(255, 255, 255, 0.8) 100%),
+                radial-gradient(circle at 10% 10%, rgba(142, 209, 224, 0.28), transparent 20%),
+                radial-gradient(circle at 85% 8%, rgba(139, 92, 246, 0.16), transparent 18%),
+                url('Animé background.png') center / cover fixed no-repeat;
+            color: var(--gris-oscuro);
+            line-height: 1.6;
+            padding: 112px var(--space-2) var(--space-2);
+            transition: background 0.35s ease, color 0.35s ease;
+        }
+
+        main {
+            font-family: 'M PLUS 1p', sans-serif;
+            letter-spacing: 0.01em;
+        }
+
+        main h1,
+        main h2,
+        main h3 {
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+            letter-spacing: 0.02em;
+        }
+
+        section {
+            padding: var(--section-padding) 0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        section + section {
+            margin-top: var(--section-gap);
+        }
+
+        section > * {
+            width: min(100%, 1400px);
+            margin: 0 auto;
+        }
+
+        section::before {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: rgba(142, 209, 224, 0.16);
+            top: -20px;
+            right: 4%;
+            filter: blur(24px);
+            pointer-events: none;
+        }
+
+        section::after {
+            content: "";
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: rgba(18, 18, 18, 0.04);
+            bottom: -20px;
+            left: 6%;
+            filter: blur(24px);
+            pointer-events: none;
+        }
+
+        body.dark section::before {
+            background: rgba(142, 209, 224, 0.12);
+        }
+
+        body.dark section::after {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 25% 20%, rgba(255, 255, 255, 0.35), transparent 14%),
+                radial-gradient(circle at 80% 25%, rgba(18, 18, 18, 0.07), transparent 12%);
+        }
+
+        body.dark {
+            --fondo: #070816;
+            --card-bg: rgba(15, 23, 42, 0.92);
+            --border: rgba(142, 209, 224, 0.2);
+            --gris-claro: #d7e9f5;
+            --gris-oscuro: #e6edf8;
+            --negro: #f8fafc;
+            background:
+                linear-gradient(130deg, rgba(5, 8, 22, 0.84) 0%, rgba(12, 22, 48, 0.82) 42%, rgba(17, 27, 56, 0.86) 100%),
+                radial-gradient(circle at 20% 18%, rgba(142, 209, 224, 0.22), transparent 18%),
+                url('Animé background.png') center / cover fixed no-repeat;
+        }
+
+        .site-header {
+            position: fixed;
+            inset: 0 0 auto 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--space-3);
+            padding: var(--space-2) var(--space-3);
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        .site-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: clamp(1.25rem, 2vw, 1.7rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #0f172a;
+        }
+
+        .logo-mark {
+            width: 42px;
+            height: 42px;
+            border-radius: 16px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+            color: #ffffff;
+            font-weight: 900;
+            font-size: 1rem;
+        }
+
+        .logo-text {
+            color: #0f172a;
+        }
+
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-left: auto;
+            flex-wrap: wrap;
+            padding: var(--space-1);
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.06);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        .site-nav a {
+            position: relative;
+            color: #0f172a;
+            font-weight: 700;
+            text-decoration: none;
+            opacity: 0.9;
+            border-radius: 999px;
+            padding: var(--space-1) var(--space-2);
+            transition: color 0.25s ease, opacity 0.25s ease, background 0.25s ease;
+        }
+
+        .site-nav a::after {
+            content: "";
+            position: absolute;
+            bottom: 6px;
+            left: 16px;
+            width: calc(100% - 32px);
+            height: 2px;
+            background: #0ea5e9;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.25s ease;
+        }
+
+        .site-nav a:hover,
+        .site-nav a:focus {
+            color: #0b1123;
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .site-nav a:hover::after,
+        .site-nav a:focus::after {
+            transform: scaleX(1);
+        }
+
+        body.dark .site-header {
+            background: rgba(8, 12, 26, 0.88);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+            box-shadow: 0 12px 30px rgba(2, 6, 23, 0.45);
+        }
+
+        body.dark .logo-text {
+            color: #e2e8f0;
+        }
+
+        body.dark .site-nav {
+            background: rgba(148, 163, 184, 0.1);
+            border-color: rgba(148, 163, 184, 0.22);
+        }
+
+        body.dark .site-nav a {
+            color: #e2e8f0;
+        }
+
+        body.dark .site-nav a:hover,
+        body.dark .site-nav a:focus {
+            color: #ffffff;
+            background: rgba(148, 163, 184, 0.16);
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            border: 1px solid rgba(15, 23, 42, 0.18);
+            background: rgba(255, 255, 255, 0.82);
+            color: #0f172a;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.25s ease, transform 0.2s ease;
+        }
+
+        .menu-toggle:hover,
+        .menu-toggle:focus-visible {
+            background: rgba(142, 209, 224, 0.34);
+            transform: translateY(-1px);
+            outline: none;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            border-radius: 999px;
+            background: #0f172a;
+            box-shadow: 0 -6px 0 #0f172a, 0 6px 0 #0f172a;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .site-header.nav-open .menu-toggle span {
+            transform: rotate(45deg);
+            box-shadow: 0 0 0 #0f172a, 0 0 0 #0f172a;
+        }
+
+        .site-header.nav-open .menu-toggle span::after {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 2px;
+            border-radius: 999px;
+            background: #0f172a;
+            transform: rotate(90deg);
+        }
+
+        body.dark .menu-toggle {
+            border-color: rgba(148, 163, 184, 0.28);
+            background: rgba(15, 23, 42, 0.88);
+            color: #e2e8f0;
+        }
+
+        body.dark .menu-toggle:hover,
+        body.dark .menu-toggle:focus-visible {
+            background: rgba(30, 41, 59, 0.94);
+        }
+
+        body.dark .menu-toggle span {
+            background: #e2e8f0;
+            box-shadow: 0 -6px 0 #e2e8f0, 0 6px 0 #e2e8f0;
+        }
+
+        body.dark .site-header.nav-open .menu-toggle span {
+            box-shadow: 0 0 0 #e2e8f0, 0 0 0 #e2e8f0;
+        }
+
+        body.dark .site-header.nav-open .menu-toggle span::after {
+            background: #e2e8f0;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        @media (max-width: 820px) {
+            .site-header {
+                flex-wrap: wrap;
+                align-items: center;
+                padding: var(--space-2) var(--space-3);
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+                margin-left: auto;
+            }
+
+            .header-actions {
+                order: 2;
+            }
+
+            .site-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+                order: 3;
+                justify-content: flex-start;
+                gap: var(--space-1);
+                margin-left: 0;
+                border-radius: 20px;
+                margin-top: var(--space-2);
+                padding: 0 var(--space-2);
+                background: rgba(255, 255, 255, 0.88);
+                overflow: hidden;
+                max-height: 0;
+                opacity: 0;
+                transform: translateY(-8px);
+                pointer-events: none;
+                transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease, padding 0.25s ease;
+            }
+
+            .site-header.nav-open .site-nav {
+                max-height: 360px;
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: auto;
+                padding: var(--space-2);
+            }
+
+            body.dark .site-nav {
+                background: rgba(8, 12, 26, 0.94);
+                border-color: rgba(148, 163, 184, 0.28);
+            }
+        }
+
+        @media (max-width: 540px) {
+            .site-nav {
+                border-radius: 18px;
+            }
+
+            .site-nav a {
+                width: 100%;
+            }
+        }
+
+        .site-title .highlight {
+            color: var(--celeste);
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            margin-top: 0.8rem;
+            color: var(--gris-oscuro);
+            max-width: 680px;
+        }
+
+        .theme-toggle {
+            border: 2px solid var(--celeste);
+            background: rgba(142, 209, 224, 0.18);
+            color: var(--negro);
+            border-radius: 999px;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.25s ease, color 0.25s ease;
+            box-shadow: 0 12px 30px rgba(14, 30, 64, 0.15);
+        }
+
+        .theme-toggle:hover,
+        .theme-toggle:focus-visible {
+            background: var(--celeste);
+            color: #08101d;
+            outline: none;
+            transform: translateY(-1px);
+        }
+
+        .blog-hero,
+        .blog-about {
+            background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(142, 209, 224, 0.08) 100%);
+            border: 1px solid var(--border);
+            border-radius: 26px;
+            box-shadow: 0 28px 60px rgba(14, 30, 64, 0.12);
+            margin: var(--space-4) auto;
+            padding: var(--space-5) var(--space-4);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(6px);
+        }
+
+        .blog-hero::after,
+        .blog-about::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: rgba(142, 209, 224, 0.22);
+            top: -40px;
+            right: -30px;
+            filter: blur(28px);
+            pointer-events: none;
+        }
+
+        .blog-hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: var(--space-4);
+            position: relative;
+            z-index: 1;
+        }
+
+        .blog-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-1);
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #0c4a6e;
+            font-weight: 700;
+            margin-bottom: var(--space-2);
+        }
+
+        .blog-hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.15;
+            color: var(--negro);
+            margin-bottom: var(--space-3);
+            max-width: 18ch;
+        }
+
+        .blog-hero p {
+            font-size: 1.05rem;
+            color: var(--gris-oscuro);
+            max-width: 62ch;
+        }
+
+        .blog-meta {
+            margin-top: var(--space-3);
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .blog-pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            border: 1px solid rgba(14, 165, 233, 0.24);
+            background: rgba(255, 255, 255, 0.78);
+            color: #0f172a;
+            font-size: 0.84rem;
+            font-weight: 600;
+            padding: 6px 12px;
+        }
+
+        .blog-hero-aside {
+            background: rgba(255, 255, 255, 0.9);
+            color: #1e293b;
+            border-radius: 20px;
+            padding: var(--space-3);
+            display: grid;
+            gap: var(--space-2);
+            align-content: start;
+            border: 1px solid rgba(148, 163, 184, 0.28);
+        }
+
+        .blog-hero-aside h2 {
+            font-size: 1.05rem;
+            line-height: 1.35;
+            margin: 0;
+            color: #0f172a;
+        }
+
+        .blog-hero-aside p {
+            margin: 0;
+            font-size: 0.94rem;
+            color: #334155;
+        }
+
+        body.dark .blog-hero-aside {
+            background: rgba(15, 23, 42, 0.9);
+            color: #e2e8f0;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+        }
+
+        body.dark .blog-hero-aside h2 {
+            color: #f8fafc;
+        }
+
+        body.dark .blog-hero-aside p {
+            color: #cbd5e1;
+        }
+
+        .blog-about h2 {
+            font-size: 1.65rem;
+            color: var(--negro);
+            margin-bottom: var(--space-2);
+        }
+
+        .blog-about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4);
+            position: relative;
+            z-index: 1;
+        }
+
+        .blog-about p {
+            margin: 0;
+            color: var(--gris-oscuro);
+            line-height: 1.75;
+        }
+
+        .blog-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: var(--space-2);
+        }
+
+        .blog-list li {
+            padding: var(--space-2);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(148, 163, 184, 0.22);
+        }
+
+        .blog-list strong {
+            display: block;
+            color: var(--negro);
+            margin-bottom: 4px;
+        }
+
+        body.dark .blog-about h2,
+        body.dark .blog-about p {
+            color: #0f172a;
+        }
+
+        body.dark .blog-list li {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            color: #0f172a;
+        }
+
+        body.dark .blog-list strong {
+            color: #020617;
+        }
+
+        @media (max-width: 900px) {
+            .blog-hero-grid,
+            .blog-about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .portfolio {
+            display: grid;
+            gap: var(--card-gap);
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            margin: var(--space-5) auto;
+        }
+
+        .works {
+            margin: var(--space-4) auto;
+            padding: 0 var(--space-3);
+        }
+
+        #proyectos {
+            min-height: calc(100vh - 110px);
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .works h2,
+        .testimonials h2 {
+            font-size: 2.4rem;
+            margin-bottom: 22px;
+            color: var(--negro);
+            text-align: center;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-shadow: 0 0 18px rgba(142, 209, 224, 0.3);
+        }
+
+        .works-carousel {
+            position: relative;
+            width: min(100%, 920px);
+            margin: 0 auto;
+            padding: 0 var(--space-5);
+            max-height: 82vh;
+        }
+
+        .work-gallery {
+            display: flex;
+            gap: var(--card-gap);
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            align-items: stretch;
+            padding: var(--space-1) 0;
+            max-height: 82vh;
+        }
+
+        .work-gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid rgba(15, 23, 42, 0.16);
+            background: rgba(255, 255, 255, 0.86);
+            color: #0f172a;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 2;
+            transition: transform 0.2s ease, background 0.25s ease;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+        }
+
+        .carousel-control:hover,
+        .carousel-control:focus-visible {
+            background: rgba(142, 209, 224, 0.4);
+            transform: translateY(-50%) scale(1.04);
+            outline: none;
+        }
+
+        .carousel-control.prev {
+            left: 0;
+        }
+
+        .carousel-control.next {
+            right: 0;
+        }
+
+        .work-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(142, 209, 224, 0.08));
+            border: 1px solid rgba(142, 209, 224, 0.3);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 26px 48px rgba(14, 30, 64, 0.18);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+            max-height: 82vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .work-card:hover {
+            transform: translateY(-6px) rotate(-0.2deg);
+            box-shadow: 0 28px 48px rgba(14, 30, 64, 0.18);
+        }
+
+        .work-card-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            max-height: 58vh;
+            padding: var(--space-2);
+            background: rgba(148, 163, 184, 0.08);
+        }
+
+        .work-card img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 54vh;
+            object-fit: contain;
+            display: block;
+        }
+
+        .work-card-content {
+            overflow: auto;
+        }
+
+        body.dark .carousel-control {
+            border-color: rgba(148, 163, 184, 0.28);
+            background: rgba(15, 23, 42, 0.86);
+            color: #e2e8f0;
+        }
+
+        body.dark .carousel-control:hover,
+        body.dark .carousel-control:focus-visible {
+            background: rgba(30, 41, 59, 0.95);
+        }
+
+        @media (max-width: 640px) {
+            .works-carousel {
+                padding: 0 var(--space-3);
+            }
+
+            .work-card {
+                flex-basis: 100%;
+            }
+
+            .carousel-control {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        .image-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.9);
+            display: none;
+            place-items: center;
+            padding: 24px;
+            z-index: 2000;
+        }
+
+        .image-modal.active {
+            display: grid;
+        }
+
+        .image-modal__content {
+            position: relative;
+            max-width: 96%;
+            max-height: 96%;
+            width: 100%;
+        }
+
+        .image-modal__img {
+            width: 100%;
+            max-height: 85vh;
+            border-radius: 22px;
+            object-fit: contain;
+            display: block;
+            box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
+        }
+
+        .image-modal__close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(15, 23, 42, 0.85);
+            color: #ffffff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .image-modal__close:hover,
+        .image-modal__close:focus {
+            background: rgba(255, 255, 255, 0.16);
+        }
+
+        .work-card-content {
+            padding: var(--card-padding);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+        }
+
+        .work-card-content h3 {
+            margin: 0 0 var(--space-3);
+            color: var(--negro);
+            font-size: 1.35rem;
+            letter-spacing: -0.03em;
+        }
+
+        .work-card-content p {
+            color: var(--gris-oscuro);
+            line-height: 1.7;
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(142, 209, 224, 0.08));
+            border-radius: var(--card-radius);
+            border: 1px solid rgba(142, 209, 224, 0.32);
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonials {
+            margin: 32px auto;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 18px;
+            font-size: 2rem;
+            color: var(--negro);
+            text-align: center;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            gap: var(--card-gap);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .testimonial-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--card-radius);
+            padding: var(--card-padding);
+            box-shadow: 0 18px 30px rgba(14, 30, 64, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .testimonial-card p {
+            margin: 0 0 var(--space-4);
+            color: var(--gris-oscuro);
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            font-weight: 700;
+            color: var(--negro);
+        }
+
+        .testimonial-author span {
+            font-size: 0.95rem;
+            color: var(--gris-oscuro);
+            font-weight: 400;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 40px rgba(18, 18, 18, 0.08);
+        }
+
+        .card-image {
+            background: linear-gradient(135deg, rgba(142, 209, 224, 0.35) 0%, rgba(245, 254, 255, 0.95) 100%);
+            padding: calc(var(--card-padding) + var(--space-4));
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--negro);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .card-content {
+            padding: var(--card-padding);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-5);
+        }
+
+        .card-content h2 {
+            margin: 0 0 var(--space-4);
+            font-size: 1.25rem;
+            color: var(--negro);
+        }
+
+        .card-content p {
+            color: var(--gris-oscuro);
+            font-size: 0.98rem;
+            margin: 0;
+        }
+
+        footer {
+            width: 100%;
+            margin: 48px auto 0;
+            padding: var(--space-4) var(--space-2) var(--space-3);
+            color: #334155;
+            font-size: 0.85rem;
+            background: rgba(255, 255, 255, 0.84);
+            border-top: 1px solid rgba(148, 163, 184, 0.26);
+            backdrop-filter: blur(6px);
+            position: relative;
+        }
+
+        .footer-grid {
+            position: relative;
+            z-index: 1;
+            max-width: 1180px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--space-4);
+            align-items: start;
+            border-top: 1px solid rgba(148, 163, 184, 0.22);
+            padding-top: var(--space-2);
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+            padding: 0;
+            color: #334155;
+        }
+
+
+        .footer-column h2 {
+            margin: 0;
+            font-size: 1rem;
+            color: #0f172a;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+
+        .footer-column p,
+        .footer-column a,
+        .footer-column li {
+            margin: 0;
+            color: #334155;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: var(--space-1);
+        }
+
+        .footer-column li {
+            margin: 0;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s ease;
+        }
+
+        .footer-column a:hover,
+        .footer-column a:focus {
+            color: #0f172a;
+        }
+
+        .footer-button-x {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.34);
+            background: rgba(255, 255, 255, 0.9);
+            color: #0f172a;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+
+        .footer-button-x:hover,
+        .footer-button-x:focus {
+            background: rgba(226, 232, 240, 0.9);
+            transform: translateY(-1px);
+        }
+
+        .footer-social-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: var(--space-2);
+        }
+
+        .footer-social-list li {
+            margin: 0;
+        }
+
+        .footer-button-x {
+            width: 100%;
+            max-width: 180px;
+            min-height: 40px;
+            padding: 0 16px;
+        }
+
+        .footer-note {
+            margin: 18px auto 0;
+            max-width: 1180px;
+            text-align: center;
+            color: #475569;
+            font-size: 0.82rem;
+            line-height: 1.5;
+        }
+
+        body.dark footer {
+            color: #cbd5e1;
+            background: rgba(10, 18, 34, 0.88);
+            border-top: 1px solid rgba(148, 163, 184, 0.2);
+        }
+
+        body.dark .footer-grid {
+            border-top: 1px solid rgba(203, 213, 225, 0.16);
+        }
+
+        body.dark .footer-column {
+            color: #cbd5e1;
+        }
+
+        body.dark .footer-column h2 {
+            color: #f8fafc;
+        }
+
+        body.dark .footer-column p,
+        body.dark .footer-column a,
+        body.dark .footer-column li {
+            color: #cbd5e1;
+        }
+
+        body.dark .footer-column a:hover,
+        body.dark .footer-column a:focus {
+            color: #ffffff;
+        }
+
+        body.dark .footer-button-x {
+            border: 1px solid rgba(203, 213, 225, 0.24);
+            background: rgba(255, 255, 255, 0.06);
+            color: #f8fafc;
+        }
+
+        body.dark .footer-button-x:hover,
+        body.dark .footer-button-x:focus {
+            background: rgba(255, 255, 255, 0.14);
+        }
+
+        body.dark .footer-note {
+            color: #94a3b8;
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            footer {
+                padding: var(--space-3) var(--space-2) var(--space-1);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-2);
+            }
+
+            .footer-note {
+                margin-top: var(--space-2);
+            }
+        }
+
+        @media (max-width: 540px) {
+            .site-header {
+                padding: var(--space-2) var(--space-2);
+            }
+        }
+
+        @media (max-width: 420px) {
+            .footer-column h2 {
+                font-size: 0.98rem;
+            }
+
+            .footer-column p,
+            .footer-column a,
+            .footer-column li {
+                font-size: 0.82rem;
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 52px;
+            height: 52px;
+            background: #25d366;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+            z-index: 9999;
+        }
+
+        .whatsapp-float:hover,
+        .whatsapp-float:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 24px rgba(0, 0, 0, 0.22);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-title" href="#inicio">
+            <span class="logo-mark">JC</span>
+            <span class="logo-text">Jean Carreras</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú de navegación">
+            <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="mainNav" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+        </div>
+    </header>
+
+    <main>
+    <section id="inicio" class="blog-hero" aria-label="Inicio del blog de Jean Carreras">
+        <div class="blog-hero-grid">
+            <div>
+                <span class="blog-kicker">Diario creativo · Diseño y cultura visual</span>
+                <h1>Arte, branding y anime: ideas que convierten estilo en identidad</h1>
+                <p>Bienvenido al blog de Jean Carreras. Este espacio reúne procesos creativos, recursos de diseño y reflexiones sobre estética juvenil para marcas que quieren destacar con una voz visual propia.</p>
+                <div class="blog-meta" aria-label="Etiquetas destacadas">
+                    <span class="blog-pill">Branding narrativo</span>
+                    <span class="blog-pill">Ilustración digital</span>
+                    <span class="blog-pill">Tendencias anime</span>
+                </div>
+            </div>
+            <aside class="blog-hero-aside" aria-label="Artículo destacado">
+                <h2>Artículo destacado</h2>
+                <p>Cómo diseñar una identidad visual inspirada en anime sin perder enfoque comercial.</p>
+                <p>Incluye guía de paletas, ritmo visual y composición para portfolios y campañas digitales.</p>
+            </aside>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="blog-about" aria-label="Sobre Jean Carreras">
+        <h2>Sobre mí</h2>
+        <div class="blog-about-grid">
+            <p>Soy un artista visual enfocado en diseño gráfico con narrativa contemporánea. Trabajo desde Buenos Aires para clientes de distintos países, combinando dirección de arte, branding e ilustración con una mirada dinámica y pop.</p>
+            <ul class="blog-list" aria-label="Enfoques principales">
+                <li>
+                    <strong>Enfoque editorial</strong>
+                    Escribo y diseño contenidos pensados para comunidades creativas y audiencias jóvenes.
+                </li>
+                <li>
+                    <strong>Proceso estratégico</strong>
+                    Cada pieza nace de objetivos de marca claros, no solo de una estética llamativa.
+                </li>
+                <li>
+                    <strong>Colaboración global</strong>
+                    Desarrollo proyectos para estudios, emprendedores y creadores de contenido internacional.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="proyectos" class="works" aria-labelledby="works-title">
+        <h2 id="works-title">Trabajos destacados</h2>
+        <div class="works-carousel" aria-label="Carrusel de trabajos destacados">
+            <button class="carousel-control prev" id="worksPrev" type="button" aria-label="Desplazar trabajos a la izquierda">&#10094;</button>
+            <div class="work-gallery" id="worksTrack">
+                <article class="work-card">
+                    <a class="work-card-link" href="dark_magician_girl_by_jeancarreras_dh1hbdg-pre.jpg">
+                        <img src="dark_magician_girl_by_jeancarreras_dh1hbdg-pre.jpg" alt="Dark Magician Girl por Jean Carreras" loading="lazy" />
+                    </a>
+                    <div class="work-card-content">
+                        <h3>Dark Magician Girl</h3>
+                        <p>Un diseño inspirado en la magia anime, con colores eléctricos y una vibra nostálgica que resalta fuerza y estilo kawaii.</p>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <a class="work-card-link" href="goku_ssj_4_by_jeancarreras_dj77a1m-414w-2x.jpg">
+                        <img src="goku_ssj_4_by_jeancarreras_dj77a1m-414w-2x.jpg" alt="Goku SSJ4 por Jean Carreras" loading="lazy" />
+                    </a>
+                    <div class="work-card-content">
+                        <h3>Goku SSJ4</h3>
+                        <p>Un tributo poderoso al universo shonen, con fuerza visual y dinámica épica que conecta con fans de la animación japonesa.</p>
+                    </div>
+                </article>
+            </div>
+            <button class="carousel-control next" id="worksNext" type="button" aria-label="Desplazar trabajos a la derecha">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="servicios" class="portfolio" aria-label="Servicios de diseño centrados en animación japonesa">
+        <article class="card">
+            <div class="card-image">Identidad Visual</div>
+            <div class="card-content">
+                <h2>Branding Corporativo</h2>
+                <p>Branding corporativo con estética inspirada en animación japonesa, ideal para marcas que buscan un estilo juvenil y global.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">Ilustración</div>
+            <div class="card-content">
+                <h2>Ilustraciones Digitales</h2>
+                <p>Ilustraciones con estilo anime para campañas, portadas y contenido editorial dirigido a un público joven y creativo.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">Promoción</div>
+            <div class="card-content">
+                <h2>Material Promocional</h2>
+                <p>Material promocional para redes sociales y eventos con tono anime, color vivo y energía internacional.</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="testimonios" class="testimonials" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">Testimonios</h2>
+        <div class="testimonial-grid">
+            <article class="testimonial-card">
+                <p>“El diseño de Jean es como una serie anime hecha realidad: colores potentes, personajes vibrantes y una onda súper fresh que conecta con mi estilo.”</p>
+                <div class="testimonial-author">- Mia, creadora de contenido <span>· Fan del anime</span></div>
+            </article>
+
+            <article class="testimonial-card">
+                <p>“Su trabajo me ayudó a darle vida a mi marca con un toque japonés y mucho flow. Se siente moderno, creativo y perfecto para mis seguidores jóvenes.”</p>
+                <div class="testimonial-author">- Leo, streamer <span>· Amante del pop kultur</span></div>
+            </article>
+
+            <article class="testimonial-card">
+                <p>“Cada diseño tiene una vibra animada que parece salida de un manga digital. Es justo lo que buscaba para mi proyecto internacional.”</p>
+                <div class="testimonial-author">- Sara, emprendedora <span>· Estilo urbano</span></div>
+            </article>
+        </div>
+    </section>
+
+    </main>
+    <footer id="contacto">
+        <div class="footer-grid">
+            <div class="footer-column" aria-label="Marca y descripción">
+                <h2>Jean Carreras</h2>
+                <p>Diseño gráfico con estética japonesa para proyectos jóvenes, branding e ilustración con impacto internacional.</p>
+            </div>
+
+            <div class="footer-column" aria-label="Enlaces rápidos">
+                <h2>Enlaces rápidos</h2>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column" aria-label="Información de contacto">
+                <h2>Contacto</h2>
+                <p>Email: <a href="mailto:contacto@jeancarreras.com">contacto@jeancarreras.com</a></p>
+                <p>Disponible para proyectos, colaboraciones y consultas creativas.</p>
+            </div>
+
+            <div class="footer-column" aria-label="Red social X">
+                <h2>Redes sociales</h2>
+                <p>Sígueme para ver mis últimas ilustraciones, rebranding y trabajos de animé.</p>
+                <ul class="footer-social-list">
+                    <li><a class="footer-button-x" href="https://x.com/jeancarreras" target="_blank" rel="noreferrer noopener">Seguir en X</a></li>
+                    <li><a class="footer-button-x" href="https://www.instagram.com/jeancarreras" target="_blank" rel="noreferrer noopener">Instagram</a></li>
+                    <li><a class="footer-button-x" href="https://www.facebook.com/jeancarreras" target="_blank" rel="noreferrer noopener">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-note">Jean Carreras | Diseño gráfico inspirado en animación japonesa para marcas jóvenes e internacionales.</p>
+    </footer>
+
+    <div class="image-modal" role="dialog" aria-modal="true" aria-label="Vista previa de imagen">
+        <div class="image-modal__content">
+            <button class="image-modal__close" type="button" aria-label="Cerrar vista previa">×</button>
+            <img class="image-modal__img" src="" alt="" />
+        </div>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const menuToggle = document.getElementById('menuToggle');
+        const siteHeader = document.querySelector('.site-header');
+        const siteNav = document.getElementById('mainNav');
+        const currentTheme = localStorage.getItem('theme');
+        const body = document.body;
+
+        const applyTheme = (mode) => {
+            if (mode === 'dark') {
+                body.classList.add('dark');
+                themeToggle.textContent = 'Modo claro';
+                themeToggle.setAttribute('aria-pressed', 'true');
+                themeToggle.setAttribute('aria-label', 'Cambiar a modo claro');
+            } else {
+                body.classList.remove('dark');
+                themeToggle.textContent = 'Modo oscuro';
+                themeToggle.setAttribute('aria-pressed', 'false');
+                themeToggle.setAttribute('aria-label', 'Cambiar a modo oscuro');
+            }
+        };
+
+        if (currentTheme === 'dark') {
+            applyTheme('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const nextTheme = body.classList.contains('dark') ? 'light' : 'dark';
+            applyTheme(nextTheme);
+            localStorage.setItem('theme', nextTheme);
+        });
+
+        const closeNavMenu = () => {
+            siteHeader.classList.remove('nav-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Abrir menú de navegación');
+        };
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = siteHeader.classList.toggle('nav-open');
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+            menuToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
+        });
+
+        siteNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 820) {
+                    closeNavMenu();
+                }
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 820) {
+                closeNavMenu();
+            }
+        });
+
+        const modal = document.querySelector('.image-modal');
+        const modalImage = document.querySelector('.image-modal__img');
+        const modalClose = document.querySelector('.image-modal__close');
+        const projectLinks = document.querySelectorAll('.work-card-link');
+        const worksTrack = document.getElementById('worksTrack');
+        const worksPrev = document.getElementById('worksPrev');
+        const worksNext = document.getElementById('worksNext');
+
+        const scrollWorks = direction => {
+            if (!worksTrack) {
+                return;
+            }
+
+            const trackStyles = window.getComputedStyle(worksTrack);
+            const gapValue = parseFloat(trackStyles.columnGap || trackStyles.gap || '0') || 0;
+            const step = worksTrack.clientWidth + gapValue;
+            const currentIndex = Math.round(worksTrack.scrollLeft / step);
+            const totalSlides = worksTrack.querySelectorAll('.work-card').length;
+
+            if (totalSlides === 0) {
+                return;
+            }
+
+            const nextIndex = (currentIndex + direction + totalSlides) % totalSlides;
+
+            worksTrack.scrollTo({
+                left: nextIndex * step,
+                behavior: 'smooth'
+            });
+        };
+
+        if (worksPrev && worksNext && worksTrack) {
+            worksPrev.addEventListener('click', () => scrollWorks(-1));
+            worksNext.addEventListener('click', () => scrollWorks(1));
+        }
+
+        const closeModal = () => {
+            modal.classList.remove('active');
+            modalImage.src = '';
+            modalImage.alt = '';
+            document.body.style.overflow = '';
+        };
+
+        projectLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const imageUrl = link.href;
+                const imageAlt = link.querySelector('img')?.alt || 'Vista de proyecto';
+                modalImage.src = imageUrl;
+                modalImage.alt = imageAlt;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        modalClose.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', event => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    </script>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/59899123456"
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="Chat de WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path
+          fill="#fff"
+          d="M16.7 13.6c-.3-.2-1.7-.8-1.9-.9s-.4-.2-.6.2-.7.9-.8 1.1-.3.2-.6.1c-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.2.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.6-1.4-.8-1.9-.2-.5-.5-.4-.6-.4h-.6c-.2 0-.6.1-.9.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .2.2 1.9 3 4.7 4.2 2.8 1.2 2.8.8 3.3.8.4 0 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.2-.4-.3-.7-.5z"
+        />
+      </svg>
+    </a>
+</body>
+</html>
